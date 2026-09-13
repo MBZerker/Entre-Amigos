@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
-  "applicationId": "app.entreamigos.mobile",
-  "channel": "testing",
-  "available": false,
-  "versionCode": 3,
-  "versionName": "0.2.1",
-  "apkUrl": null,
-  "sha256": null,
-  "sizeBytes": null,
-  "notes": "Canal preparado; nenhuma candidata publicada.",
-  "publishedAt": null
+    "schemaVersion":  1,
+    "applicationId":  "app.entreamigos.mobile",
+    "channel":  "testing",
+    "available":  true,
+    "versionCode":  4,
+    "versionName":  "0.2.2",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-4.apk",
+    "sha256":  "2EE9AF40368BCB18BB26677BC71CD36F8AD614EB3FD3EFB7FC8BFA31A16FD8D6",
+    "sizeBytes":  8480857,
+    "notes":  "Atualizador persistente: aviso imediato, download que continua após fechar o aplicativo, retomada automática e instalação protegida contra cancelamento acidental.",
+    "publishedAt":  "2026-09-13T16:30:19.4242022Z"
 }
