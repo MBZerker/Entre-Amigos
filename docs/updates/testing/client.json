@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  4,
-    "versionName":  "0.2.2",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-4.apk",
-    "sha256":  "2EE9AF40368BCB18BB26677BC71CD36F8AD614EB3FD3EFB7FC8BFA31A16FD8D6",
-    "sizeBytes":  8480857,
-    "notes":  "Atualizador persistente: aviso imediato, download que continua após fechar o aplicativo, retomada automática e instalação protegida contra cancelamento acidental.",
-    "publishedAt":  "2026-09-13T16:30:19.4242022Z"
+    "versionCode":  5,
+    "versionName":  "0.2.3",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-5.apk",
+    "sha256":  "5F005BE1C2C4ACFEA8F7C860871ED00CECFE90818AFA12E1B2EF42F1284853F8",
+    "sizeBytes":  8814561,
+    "notes":  "Novos ícones do cliente e do ADM. Candidata dedicada ao teste de retomada automática da atualização após fechar e reabrir o aplicativo.",
+    "publishedAt":  "2026-09-13T17:04:32.2836996Z"
 }

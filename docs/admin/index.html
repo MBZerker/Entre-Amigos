@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>Entre Amigos — acesso administrativo</title>
   <style>
-    :root{color-scheme:dark;--bg:#080a12;--card:#151927;--text:#f7f7fb;--muted:#b6bdd3;--brand:#8b7cff;--danger:#ff7d91}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;display:grid;place-items:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at top,#2b245e,transparent 34rem),var(--bg)}main{width:min(520px,100%);padding:clamp(26px,6vw,48px);border:1px solid #303650;border-radius:26px;background:#151927f2;box-shadow:0 28px 90px #0009}h1{margin:0 0 10px;font-size:38px}p{color:var(--muted);line-height:1.55}label{display:block;margin-top:18px;font-weight:750}input{width:100%;margin-top:7px;padding:14px;border:1px solid #3b4260;border-radius:13px;background:#0d101b;color:var(--text);font:inherit}.password{display:grid;grid-template-columns:1fr auto}.password input{grid-column:1/3;grid-row:1}.password button{grid-column:2;grid-row:1;margin:8px;border:0;background:transparent;color:#dcd8ff;font-size:20px;cursor:pointer}button.primary{width:100%;margin-top:22px;padding:15px;border:0;border-radius:14px;background:var(--brand);color:white;font:inherit;font-weight:850;cursor:pointer}button:disabled{opacity:.55;cursor:wait}.status{min-height:24px;margin-top:16px}.error{color:var(--danger)}a{color:#dcd8ff}
+    :root{color-scheme:dark;--bg:#080a12;--card:#151927;--text:#f7f7fb;--muted:#b6bdd3;--brand:#8b7cff;--danger:#ff7d91}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;display:grid;place-items:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at top,#2b245e,transparent 34rem),var(--bg)}main{width:min(520px,100%);padding:clamp(26px,6vw,48px);border:1px solid #303650;border-radius:26px;background:#151927f2;box-shadow:0 28px 90px #0009}h1{margin:0 0 10px;font-size:38px}p{color:var(--muted);line-height:1.55}label{display:block;margin-top:18px;font-weight:750}input{width:100%;margin-top:7px;padding:14px;border:1px solid #3b4260;border-radius:13px;background:#0d101b;color:var(--text);font:inherit}.password{display:grid;grid-template-columns:1fr auto}.password input{grid-column:1/3;grid-row:1}.password button{grid-column:2;grid-row:1;margin:8px;border:0;background:transparent;color:#dcd8ff;font-size:20px;cursor:pointer}button.primary,.download{width:100%;margin-top:22px;padding:15px;border:0;border-radius:14px;background:var(--brand);color:white;font:inherit;font-weight:850;cursor:pointer}.download{display:block;text-align:center;text-decoration:none}.download[hidden]{display:none}button:disabled{opacity:.55;cursor:wait}.status{min-height:24px;margin-top:16px}.error{color:var(--danger)}a{color:#dcd8ff}
   </style>
 </head>
 <body><main>
@@ -15,18 +15,20 @@
   <form id="login">
     <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="username" required>
     <label for="password">Senha</label><div class="password"><input id="password" name="password" type="password" autocomplete="current-password" required><button id="eye" type="button" aria-label="Mostrar senha">👁</button></div>
-    <button class="primary" id="submit" type="submit">Entrar e baixar</button>
+    <button class="primary" id="submit" type="submit">Entrar e preparar download</button>
   </form>
   <div class="status" id="status" role="status" aria-live="polite"></div>
+  <a class="download" id="download" hidden>Baixar APK ADM</a>
   <p><a href="../">Voltar à página inicial</a></p>
   <script>
     const API="https://entre-amigos-api-preview.nectof.workers.dev";
-    const form=document.getElementById("login"),email=document.getElementById("email"),password=document.getElementById("password"),submit=document.getElementById("submit"),status=document.getElementById("status"),eye=document.getElementById("eye");
+    const form=document.getElementById("login"),email=document.getElementById("email"),password=document.getElementById("password"),submit=document.getElementById("submit"),status=document.getElementById("status"),eye=document.getElementById("eye"),download=document.getElementById("download");
+    let downloadUrl="";
     const from64url=value=>Uint8Array.from(atob(value.replace(/-/g,"+").replace(/_/g,"/")+"=".repeat((4-value.length%4)%4)),c=>c.charCodeAt(0));
     const hex=bytes=>Array.from(bytes,b=>b.toString(16).padStart(2,"0")).join("").toUpperCase();
     eye.addEventListener("click",()=>{const visible=password.type==="text";password.type=visible?"password":"text";eye.setAttribute("aria-label",visible?"Mostrar senha":"Ocultar senha")});
     form.addEventListener("submit",async event=>{
-      event.preventDefault();submit.disabled=true;status.className="status";status.textContent="Confirmando acesso…";
+      event.preventDefault();submit.disabled=true;status.className="status";status.textContent="Confirmando acesso…";download.hidden=true;if(downloadUrl){URL.revokeObjectURL(downloadUrl);downloadUrl=""}
       let refreshToken="";
       try{
         const login=await fetch(`${API}/api/v1/auth/login`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:email.value,password:password.value,deviceName:"GitHub Pages — download ADM"})});
@@ -43,15 +45,16 @@
         const key=await crypto.subtle.importKey("raw",from64url(release.keyBase64Url),"AES-GCM",false,["decrypt"]);
         const clear=await crypto.subtle.decrypt({name:"AES-GCM",iv:from64url(release.ivBase64Url),tagLength:128},key,encrypted);
         if(clear.byteLength!==release.sizeBytes||hex(new Uint8Array(await crypto.subtle.digest("SHA-256",clear)))!==release.sha256.toUpperCase())throw new Error("A verificação do APK falhou.");
-        const url=URL.createObjectURL(new Blob([clear],{type:"application/vnd.android.package-archive"}));
-        const link=document.createElement("a");link.href=url;link.download=release.filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
-        status.textContent=`APK ADM ${release.versionName} verificado. O download foi iniciado.`;
+        downloadUrl=URL.createObjectURL(new Blob([clear],{type:"application/vnd.android.package-archive"}));
+        download.href=downloadUrl;download.download=release.filename;download.textContent=`Baixar APK ADM ${release.versionName}`;download.hidden=false;
+        status.textContent=`APK ADM ${release.versionName} verificado. Toque no botão abaixo para baixar.`;
       }catch(error){status.className="status error";status.textContent=error instanceof Error?error.message:"Não foi possível concluir o download."}
       finally{
         if(refreshToken)fetch(`${API}/api/v1/auth/logout`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({refreshToken})}).catch(()=>{});
         submit.disabled=false;
       }
     });
+    addEventListener("beforeunload",()=>{if(downloadUrl)URL.revokeObjectURL(downloadUrl)});
   </script>
 </main></body>
 </html>
