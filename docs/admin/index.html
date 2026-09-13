@@ -23,12 +23,9 @@
   <script>
     const API="https://entre-amigos-api-preview.nectof.workers.dev";
     const form=document.getElementById("login"),email=document.getElementById("email"),password=document.getElementById("password"),submit=document.getElementById("submit"),status=document.getElementById("status"),eye=document.getElementById("eye"),download=document.getElementById("download");
-    let downloadUrl="";
-    const from64url=value=>Uint8Array.from(atob(value.replace(/-/g,"+").replace(/_/g,"/")+"=".repeat((4-value.length%4)%4)),c=>c.charCodeAt(0));
-    const hex=bytes=>Array.from(bytes,b=>b.toString(16).padStart(2,"0")).join("").toUpperCase();
     eye.addEventListener("click",()=>{const visible=password.type==="text";password.type=visible?"password":"text";eye.setAttribute("aria-label",visible?"Mostrar senha":"Ocultar senha")});
     form.addEventListener("submit",async event=>{
-      event.preventDefault();submit.disabled=true;status.className="status";status.textContent="Confirmando acesso…";download.hidden=true;if(downloadUrl){URL.revokeObjectURL(downloadUrl);downloadUrl=""}
+      event.preventDefault();submit.disabled=true;status.className="status";status.textContent="Confirmando acesso…";download.hidden=true;download.removeAttribute("href");
       let refreshToken="";
       try{
         const login=await fetch(`${API}/api/v1/auth/login`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:email.value,password:password.value,deviceName:"GitHub Pages — download ADM"})});
@@ -38,23 +35,16 @@
         const releaseResponse=await fetch(`${API}/api/v1/admin/download-release`,{headers:{Authorization:`Bearer ${session.accessToken}`}});
         if(releaseResponse.status===403)throw new Error("Esta conta não possui acesso ao aplicativo ADM.");
         if(!releaseResponse.ok)throw new Error("Download administrativo temporariamente indisponível.");
-        const release=await releaseResponse.json();status.textContent=`Baixando arquivo criptografado ${release.versionName}…`;
-        const encrypted=await (await fetch(release.encryptedUrl,{cache:"no-store"})).arrayBuffer();
-        if(encrypted.byteLength!==release.encryptedSizeBytes)throw new Error("O arquivo recebido está incompleto.");
-        status.textContent="Verificando e descriptografando no seu aparelho…";
-        const key=await crypto.subtle.importKey("raw",from64url(release.keyBase64Url),"AES-GCM",false,["decrypt"]);
-        const clear=await crypto.subtle.decrypt({name:"AES-GCM",iv:from64url(release.ivBase64Url),tagLength:128},key,encrypted);
-        if(clear.byteLength!==release.sizeBytes||hex(new Uint8Array(await crypto.subtle.digest("SHA-256",clear)))!==release.sha256.toUpperCase())throw new Error("A verificação do APK falhou.");
-        downloadUrl=URL.createObjectURL(new Blob([clear],{type:"application/vnd.android.package-archive"}));
-        download.href=downloadUrl;download.download=release.filename;download.textContent=`Baixar APK ADM ${release.versionName}`;download.hidden=false;
-        status.textContent=`APK ADM ${release.versionName} verificado. Toque no botão abaixo para baixar.`;
+        const release=await releaseResponse.json();
+        if(typeof release.downloadUrl!=="string"||!release.downloadUrl.startsWith(`${API}/api/v1/admin/download-apk?ticket=`))throw new Error("O servidor não retornou um link de download válido.");
+        download.href=release.downloadUrl;download.download=release.filename;download.rel="noreferrer";download.textContent=`Baixar APK ADM ${release.versionName}`;download.hidden=false;
+        status.textContent=`Acesso confirmado. Toque no botão abaixo em até 5 minutos para baixar o APK ADM ${release.versionName}.`;
       }catch(error){status.className="status error";status.textContent=error instanceof Error?error.message:"Não foi possível concluir o download."}
       finally{
         if(refreshToken)fetch(`${API}/api/v1/auth/logout`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({refreshToken})}).catch(()=>{});
         submit.disabled=false;
       }
     });
-    addEventListener("beforeunload",()=>{if(downloadUrl)URL.revokeObjectURL(downloadUrl)});
   </script>
 </main></body>
 </html>
