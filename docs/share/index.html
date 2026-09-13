@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Convite Entre Amigos">
+  <meta property="og:description" content="Abra este convite no aplicativo Entre Amigos.">
+  <meta property="og:url" content="https://mbzerker.github.io/Entre-Amigos/share/">
+  <title>Abrir no Entre Amigos</title>
+  <style>
+    :root { color-scheme:dark; --text:#f7f7fb; --muted:#b6bdd3; --brand:#8b7cff; }
+    * { box-sizing:border-box } body { margin:0; min-height:100vh; padding:22px; display:grid; place-items:center; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--text); background:radial-gradient(circle at top,#2a2458,transparent 34rem),#090b14 }
+    main { width:min(560px,100%); padding:32px; border:1px solid #303650; border-radius:26px; background:#141827ee; box-shadow:0 28px 90px #0009 }
+    .mark { width:58px; height:58px; border-radius:18px; display:grid; place-items:center; font-weight:900; background:linear-gradient(145deg,#8b7cff,#4dd7bd) }
+    h1 { margin:24px 0 10px; font-size:36px } p { color:var(--muted); line-height:1.55 }
+    a.button { display:block; margin-top:18px; padding:15px 18px; text-align:center; border-radius:15px; background:var(--brand); color:white; font-weight:800; text-decoration:none }
+    a.secondary { background:#242a40; color:#dedaff }
+    #status { padding:14px; border-radius:14px; background:#0d101b }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">EA</div>
+    <h1>Convite Entre Amigos</h1>
+    <p id="status">Preparando o convite…</p>
+    <a class="button" id="open" href="https://mbzerker.github.io/Entre-Amigos/">Abrir no aplicativo</a>
+    <a class="button secondary" href="../">Conhecer o Entre Amigos</a>
+  </main>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const type = params.get("type") || "group";
+    const id = params.get("id") || "";
+    const code = params.get("code") || "";
+    const open = document.getElementById("open");
+    const status = document.getElementById("status");
+    if (id || code) {
+      const target = new URL("entreamigos://open");
+      target.searchParams.set("type", type);
+      if (id) target.searchParams.set("id", id);
+      if (code) target.searchParams.set("code", code);
+      open.href = target.toString();
+      status.textContent = type === "activity" ? "Você recebeu uma atividade compartilhada." : "Você recebeu um convite para um grupo.";
+      setTimeout(() => { location.href = open.href; }, 350);
+    } else {
+      status.textContent = "Este link não contém um convite válido.";
+      open.hidden = true;
+    }
+  </script>
+</body>
+</html>
