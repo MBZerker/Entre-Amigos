@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /Entre-Amigos/updates/testing/
 Disallow: /Entre-Amigos/updates/admin/
-
+Disallow: /Entre-Amigos/admin/

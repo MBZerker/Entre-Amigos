@@ -22,6 +22,8 @@
     .panel { padding:30px; display:flex; flex-direction:column; justify-content:center; gap:16px; }
     .pill { align-self:flex-start; padding:8px 12px; border-radius:999px; background:#272c43; color:#dcd8ff; font-size:13px; font-weight:750; }
     .status { padding:18px; border-radius:18px; background:#0d101b; border:1px solid #252b40; color:var(--muted); }
+    .button { display:block; padding:14px 16px; border-radius:14px; text-align:center; text-decoration:none; background:var(--brand); color:white; font-weight:800; }
+    .secondary { background:#292e45; color:#e4e1ff; }
     a { color:#d9d4ff; }
     @media (max-width:720px) { main{grid-template-columns:1fr}.hero{padding:34px}.panel{padding:24px} }
   </style>
@@ -34,9 +36,11 @@
       <p>Um espaço para criar grupos, compartilhar atividades e jogar junto.</p>
     </section>
     <section class="panel">
-      <span class="pill">Em preparação</span>
+      <span class="pill">Versão de testes</span>
       <h2>Aplicativo Android</h2>
-      <div class="status">Ainda não existe uma versão pública aprovada para download. Toda candidata é testada pelo proprietário antes de aparecer aqui.</div>
+      <div class="status">Baixe o cliente normalmente ou use o acesso protegido para obter o aplicativo administrativo.</div>
+      <a class="button" href="download/">Baixar Entre Amigos</a>
+      <a class="button secondary" href="admin/" rel="nofollow">Acesso ADM</a>
       <p>Recebeu um convite? Abra o link no celular com o Entre Amigos instalado.</p>
     </section>
   </main>
