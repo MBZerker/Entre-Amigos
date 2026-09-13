@@ -15,6 +15,9 @@
   <form id="login">
     <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="username" required>
     <label for="password">Senha</label><div class="password"><input id="password" name="password" type="password" autocomplete="current-password" required><button id="eye" type="button" aria-label="Mostrar senha">👁</button></div>
+    <div id="mfa" hidden>
+      <label for="code">Código do autenticador</label><input id="code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="000000">
+    </div>
     <button class="primary" id="submit" type="submit">Entrar e preparar download</button>
   </form>
   <div class="status" id="status" role="status" aria-live="polite"></div>
@@ -22,16 +25,29 @@
   <p><a href="../">Voltar à página inicial</a></p>
   <script>
     const API="https://entre-amigos-api-preview.nectof.workers.dev";
-    const form=document.getElementById("login"),email=document.getElementById("email"),password=document.getElementById("password"),submit=document.getElementById("submit"),status=document.getElementById("status"),eye=document.getElementById("eye"),download=document.getElementById("download");
+    const form=document.getElementById("login"),email=document.getElementById("email"),password=document.getElementById("password"),mfa=document.getElementById("mfa"),code=document.getElementById("code"),submit=document.getElementById("submit"),status=document.getElementById("status"),eye=document.getElementById("eye"),download=document.getElementById("download");
+    let challengeToken="";
     eye.addEventListener("click",()=>{const visible=password.type==="text";password.type=visible?"password":"text";eye.setAttribute("aria-label",visible?"Mostrar senha":"Ocultar senha")});
     form.addEventListener("submit",async event=>{
       event.preventDefault();submit.disabled=true;status.className="status";status.textContent="Confirmando acesso…";download.hidden=true;download.removeAttribute("href");
       let refreshToken="";
       try{
-        const login=await fetch(`${API}/api/v1/auth/login`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:email.value,password:password.value,deviceName:"GitHub Pages — download ADM"})});
-        password.value="";
-        if(!login.ok)throw new Error("Login ou senha inválidos.");
-        const session=await login.json();refreshToken=session.refreshToken;
+        let session;
+        if(challengeToken){
+          const verification=await fetch(`${API}/api/v1/auth/mfa/verify`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({challengeToken,code:code.value})});
+          code.value="";
+          if(!verification.ok)throw new Error("Código inválido, expirado ou já utilizado.");
+          session=await verification.json();
+        }else{
+          const login=await fetch(`${API}/api/v1/auth/login`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:email.value,password:password.value,deviceName:"GitHub Pages — download ADM"})});
+          password.value="";
+          if(!login.ok)throw new Error("Login ou senha inválidos.");
+          session=await login.json();
+          if(session.mfaRequired&&session.challengeToken){
+            challengeToken=session.challengeToken;mfa.hidden=false;code.required=true;email.disabled=true;password.disabled=true;submit.textContent="Confirmar código e preparar download";status.textContent="Senha confirmada. Digite o código de 6 dígitos do autenticador.";code.focus();return;
+          }
+        }
+        refreshToken=session.refreshToken;challengeToken="";mfa.hidden=true;code.required=false;
         const releaseResponse=await fetch(`${API}/api/v1/admin/download-release`,{headers:{Authorization:`Bearer ${session.accessToken}`}});
         if(releaseResponse.status===403)throw new Error("Esta conta não possui acesso ao aplicativo ADM.");
         if(!releaseResponse.ok)throw new Error("Download administrativo temporariamente indisponível.");
