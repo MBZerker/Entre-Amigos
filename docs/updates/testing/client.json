@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  6,
-    "versionName":  "0.3.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-6.apk",
-    "sha256":  "E394A1E29E66DF202C744E1ABD74C6ACE36A6EEDC2D9129926A0FD226A065416",
-    "sizeBytes":  9076705,
-    "notes":  "Segurança reforçada com autenticador em duas etapas, códigos de recuperação e gerenciamento de dispositivos no perfil.",
-    "publishedAt":  "2026-09-13T19:04:43.1187732Z"
+    "versionCode":  7,
+    "versionName":  "0.4.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-7.apk",
+    "sha256":  "000A37224174E0C818EE6CBDE5449A290F9EE41B20D5BD1446850F7FD96FF43C",
+    "sizeBytes":  9109531,
+    "notes":  "Parte 3: crie atividades e jogos em seus grupos, salve rascunhos, publique, pause, arquive, restaure, duplique, acompanhe versões e convide editores.",
+    "publishedAt":  "2026-09-13T20:55:04.7205583Z"
 }
