@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  8,
-    "versionName":  "0.5.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-8.apk",
-    "sha256":  "5FD594B20074BEF291FD9E25794588FAD384408C52C551D1047B555EA0DA2D24",
-    "sizeBytes":  9125915,
-    "notes":  "Parte 4: estrutura JSON versionada, validação segura e base para criação de jogos.",
-    "publishedAt":  "2026-09-14T04:14:03.4396369Z"
+    "versionCode":  9,
+    "versionName":  "0.5.1",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-9.apk",
+    "sha256":  "D1DB354EC0B93EF42170778911EFBC4DD4EEC9D3D559D8314B972E52CB006BC7",
+    "sizeBytes":  9142299,
+    "notes":  "Correção do erro 400 ao criar JSON e melhorias nas mensagens de validação.",
+    "publishedAt":  "2026-09-14T05:03:51.5756409Z"
 }
