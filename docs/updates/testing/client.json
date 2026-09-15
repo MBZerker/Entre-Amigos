@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  10,
-    "versionName":  "0.6.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-10.apk",
-    "sha256":  "95C577E2A26E000E5F15C1C0AB11FE39D314FE36C679D5AF7202A72BFA443DE8",
-    "sizeBytes":  9593762,
-    "notes":  "Parte 5: atividades interativas, estado pessoal e compartilhado, sincronização e retomada segura de ações.",
-    "publishedAt":  "2026-09-14T12:19:39.8879095Z"
+    "versionCode":  11,
+    "versionName":  "0.7.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-11.apk",
+    "sha256":  "B91C3986E2129E2F7E32B386B2FED9F4B04E82D04A74958C46426186F8B78D34",
+    "sizeBytes":  9642910,
+    "notes":  "Parte 6: rifa gratuita pela Federal, reservas, confirmação, resultado oficial compartilhado e retomada segura.",
+    "publishedAt":  "2026-09-15T14:24:59.5212088Z"
 }
