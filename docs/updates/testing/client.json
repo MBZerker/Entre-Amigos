@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  11,
-    "versionName":  "0.7.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-11.apk",
-    "sha256":  "B91C3986E2129E2F7E32B386B2FED9F4B04E82D04A74958C46426186F8B78D34",
-    "sizeBytes":  9642910,
-    "notes":  "Parte 6: rifa gratuita pela Federal, reservas, confirmação, resultado oficial compartilhado e retomada segura.",
-    "publishedAt":  "2026-09-15T14:24:59.5212088Z"
+    "versionCode":  12,
+    "versionName":  "0.8.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-12.apk",
+    "sha256":  "1557D7F80D0AA87F83DCA74BCC4EC78A227C73C77C605CC8544E2D6352B95D97",
+    "sizeBytes":  9708446,
+    "notes":  "Parte 7: editor guiado, modelos, previa local, rascunho automatico, desfazer/refazer e importar/exportar JSON. Em Criar, abra uma atividade em rascunho ou pause antes de editar. Rifa Federal permanece protegida.",
+    "publishedAt":  "2026-09-16T06:36:39.4363044Z"
 }
