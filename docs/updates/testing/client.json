@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  12,
-    "versionName":  "0.8.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-12.apk",
-    "sha256":  "1557D7F80D0AA87F83DCA74BCC4EC78A227C73C77C605CC8544E2D6352B95D97",
-    "sizeBytes":  9708446,
-    "notes":  "Parte 7: editor guiado, modelos, previa local, rascunho automatico, desfazer/refazer e importar/exportar JSON. Em Criar, abra uma atividade em rascunho ou pause antes de editar. Rifa Federal permanece protegida.",
-    "publishedAt":  "2026-09-16T06:36:39.4363044Z"
+    "versionCode":  13,
+    "versionName":  "0.8.1",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-13.apk",
+    "sha256":  "C264026DC3EB176AD4FF1E9A284ECBF8B6C67B4EB1E355514A628C7452E532C1",
+    "sizeBytes":  9724830,
+    "notes":  "Criador mais simples: escolha um modelo, personalize um item por vez e experimente antes de salvar. Formularios separados para jogo e grupo, menos termos tecnicos e melhor leitura em telas pequenas.",
+    "publishedAt":  "2026-09-17T04:31:14.3547127Z"
 }
