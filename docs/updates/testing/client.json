@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  14,
-    "versionName":  "0.8.2",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-14.apk",
-    "sha256":  "20A3E7536BEF817316489BA0E59503326DC0DC9FE2D70746237CDF258681824F",
-    "sizeBytes":  9724834,
-    "notes":  "Exclusao de criacoes com confirmacao e tabela adaptada ao celular, preservando as marcacoes existentes.",
-    "publishedAt":  "2026-09-18T06:22:20.6782266Z"
+    "versionCode":  15,
+    "versionName":  "0.8.3",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-15.apk",
+    "sha256":  "421E4EFDB2CFF12CCF3714516145C2D17A4BC6ECE8F292BC8301CAA3A53123A7",
+    "sizeBytes":  9741214,
+    "notes":  "Atividades restritas aos membros do grupo. Rascunhos podem ser apagados; rifas apuradas saem das listas com histórico preservado no Perfil. Listas de 20 itens, carregamento animado e menos consultas repetidas.",
+    "publishedAt":  "2026-09-18T18:30:48.8972049Z"
 }
