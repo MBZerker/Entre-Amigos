@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  15,
-    "versionName":  "0.8.3",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-15.apk",
-    "sha256":  "421E4EFDB2CFF12CCF3714516145C2D17A4BC6ECE8F292BC8301CAA3A53123A7",
-    "sizeBytes":  9741214,
-    "notes":  "Atividades restritas aos membros do grupo. Rascunhos podem ser apagados; rifas apuradas saem das listas com histórico preservado no Perfil. Listas de 20 itens, carregamento animado e menos consultas repetidas.",
-    "publishedAt":  "2026-09-18T18:30:48.8972049Z"
+    "versionCode":  16,
+    "versionName":  "0.8.4",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-16.apk",
+    "sha256":  "A0C65AC39467FFC06A9DD4ED12C9310950F05A70481CEF5B16267012C3DC73B8",
+    "sizeBytes":  9757598,
+    "notes":  "Encerramento por acordo: o organizador registra os resultados e todos os participantes registrados confirmam. Discordancias bloqueiam o encerramento; correcoes exigem novas confirmacoes. Resultados e historico preservados. Rifa Federal continua automatica.",
+    "publishedAt":  "2026-09-18T19:06:13.0000573Z"
 }
