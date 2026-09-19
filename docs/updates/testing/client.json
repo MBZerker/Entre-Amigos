@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  16,
-    "versionName":  "0.8.4",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-16.apk",
-    "sha256":  "A0C65AC39467FFC06A9DD4ED12C9310950F05A70481CEF5B16267012C3DC73B8",
-    "sizeBytes":  9757598,
-    "notes":  "Encerramento por acordo: o organizador registra os resultados e todos os participantes registrados confirmam. Discordancias bloqueiam o encerramento; correcoes exigem novas confirmacoes. Resultados e historico preservados. Rifa Federal continua automatica.",
-    "publishedAt":  "2026-09-18T19:06:13.0000573Z"
+    "versionCode":  17,
+    "versionName":  "0.8.5",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-17.apk",
+    "sha256":  "114D7E4C3E3DC2EECD9A650C8999FF68CFDA32EDC33D37991AFE8830AE6B548C",
+    "sizeBytes":  9774302,
+    "notes":  "Temas claro e escuro com textos e campos legiveis; icone atual. Pagina de download sincronizada automaticamente com a versao do atualizador.",
+    "publishedAt":  "2026-09-19T05:42:02.2596752Z"
 }

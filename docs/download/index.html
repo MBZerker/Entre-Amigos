@@ -8,12 +8,14 @@
   <style>
     :root{color-scheme:dark;--bg:#090b14;--card:#151929;--text:#f7f7fb;--muted:#b8bfd4;--brand:#8b7cff;--ok:#4dd7bd}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;display:grid;place-items:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at top,#2b245e,transparent 36rem),var(--bg)}main{width:min(660px,100%);padding:clamp(26px,6vw,54px);border:1px solid #303650;border-radius:28px;background:#151929ef;box-shadow:0 28px 90px #0009}h1{font-size:clamp(38px,8vw,62px);line-height:1;margin:0 0 16px}p{color:var(--muted);line-height:1.6}.version{padding:16px;border-radius:16px;background:#0d101b;border:1px solid #2a3047}.button{display:block;margin-top:20px;padding:16px 20px;border-radius:15px;text-align:center;text-decoration:none;background:var(--brand);color:white;font-weight:850}.secondary{background:#272c42;color:#e4e1ff}.hash{overflow-wrap:anywhere;font:12px ui-monospace,monospace;color:#9fa8c5}.ok{color:var(--ok);font-weight:750}
   </style>
+  <script type="module" src="../assets/client-release.mjs"></script>
 </head>
-<body><main>
+<body data-release-channel="testing"><main>
   <h1>Entre Amigos</h1>
   <p>Download oficial do aplicativo cliente para Android. Você também poderá procurar atualizações dentro do próprio app.</p>
-  <div class="version"><div class="ok">Versão-base 0.2.1</div><p>Primeira instalação da linha de assinatura oficial.</p><div class="hash">SHA-256: 4255CB92B4109C7F1017E05CAF866F6EA7C53BB54514778BE5FC2907880FEA9A</div></div>
-  <a class="button" href="files/entre-amigos-client-0.2.1.apk" download>Baixar APK para Android</a>
+  <div class="version" aria-live="polite"><div class="ok" data-release-version>Consultando versão…</div><p data-release-status>Aguarde enquanto conferimos o download.</p><div class="hash" data-release-hash></div></div>
+  <a class="button" data-release-download aria-disabled="true" download>Preparando download…</a>
+  <noscript><p>Ative o JavaScript para consultar a versão atual e baixar o aplicativo.</p></noscript>
   <a class="button secondary" href="../">Voltar à página inicial</a>
   <p>Se o Android solicitar, autorize a instalação de aplicativos desta fonte. Atualizações somente serão aceitas quando mantiverem a assinatura oficial.</p>
 </main></body>
