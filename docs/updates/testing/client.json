@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  17,
-    "versionName":  "0.8.5",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-17.apk",
-    "sha256":  "114D7E4C3E3DC2EECD9A650C8999FF68CFDA32EDC33D37991AFE8830AE6B548C",
+    "versionCode":  18,
+    "versionName":  "0.8.6",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-18.apk",
+    "sha256":  "E121E6291290300C250FC502671D79CE476D9700F1771939B1953423AE3F4DAB",
     "sizeBytes":  9774302,
-    "notes":  "Temas claro e escuro com textos e campos legiveis; icone atual. Pagina de download sincronizada automaticamente com a versao do atualizador.",
-    "publishedAt":  "2026-09-19T05:42:02.2596752Z"
+    "notes":  "Nova area Atividades: Participando, Minhas criacoes e Historico. Consulte atividades encerradas fora do Perfil. Listas paginadas, carregamento sob demanda e controle de atualizacoes repetidas.",
+    "publishedAt":  "2026-09-23T19:47:38.5047271Z"
 }
