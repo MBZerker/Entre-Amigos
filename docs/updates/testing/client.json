@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  19,
-    "versionName":  "0.9.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-19.apk",
-    "sha256":  "9F1778522B1EF1461541DEEB5CBB653FC4892BCCDEDDF5979CDBA6782C9E7DD2",
-    "sizeBytes":  9807070,
-    "notes":  "Menu organizado com Perfil, Configuracoes, Atualizacoes e Transacoes em telas separadas. Temas claro e escuro e cores azul, verde, roxo e laranja. Inicio renovado. Reservas mostram R; confirmados mostram estrela apenas para o dono. Opcao para receber versoes de teste.",
-    "publishedAt":  "2026-09-24T18:25:45.3681020Z"
+    "versionCode":  20,
+    "versionName":  "0.9.1",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-20.apk",
+    "sha256":  "39F1A17D92B22C1F703198792564CD047326EAB1B7E64351013DF740DAFF3143",
+    "sizeBytes":  9823454,
+    "notes":  "Criacao guiada em tres passos. Grupos organizados e participar separado de gerenciar. Rifa em paginas locais de 20 numeros, com regras recolhidas. Corrige a escolha do canal de testes e a consulta manual de atualizacoes. Temas e cores preservados.",
+    "publishedAt":  "2026-09-25T18:01:16.6317815Z"
 }
