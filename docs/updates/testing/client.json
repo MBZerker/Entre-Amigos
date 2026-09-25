@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  18,
-    "versionName":  "0.8.6",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-18.apk",
-    "sha256":  "E121E6291290300C250FC502671D79CE476D9700F1771939B1953423AE3F4DAB",
-    "sizeBytes":  9774302,
-    "notes":  "Nova area Atividades: Participando, Minhas criacoes e Historico. Consulte atividades encerradas fora do Perfil. Listas paginadas, carregamento sob demanda e controle de atualizacoes repetidas.",
-    "publishedAt":  "2026-09-23T19:47:38.5047271Z"
+    "versionCode":  19,
+    "versionName":  "0.9.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-19.apk",
+    "sha256":  "9F1778522B1EF1461541DEEB5CBB653FC4892BCCDEDDF5979CDBA6782C9E7DD2",
+    "sizeBytes":  9807070,
+    "notes":  "Menu organizado com Perfil, Configuracoes, Atualizacoes e Transacoes em telas separadas. Temas claro e escuro e cores azul, verde, roxo e laranja. Inicio renovado. Reservas mostram R; confirmados mostram estrela apenas para o dono. Opcao para receber versoes de teste.",
+    "publishedAt":  "2026-09-24T18:25:45.3681020Z"
 }
