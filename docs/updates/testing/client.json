@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  20,
-    "versionName":  "0.9.1",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-20.apk",
-    "sha256":  "39F1A17D92B22C1F703198792564CD047326EAB1B7E64351013DF740DAFF3143",
-    "sizeBytes":  9823454,
-    "notes":  "Criacao guiada em tres passos. Grupos organizados e participar separado de gerenciar. Rifa em paginas locais de 20 numeros, com regras recolhidas. Corrige a escolha do canal de testes e a consulta manual de atualizacoes. Temas e cores preservados.",
-    "publishedAt":  "2026-09-25T18:01:16.6317815Z"
+    "versionCode":  21,
+    "versionName":  "0.9.2",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-21.apk",
+    "sha256":  "301244311D4F5F15A72E60EA29AD735DFD87D3072B1EAEBE9474DE7C767B2505",
+    "sizeBytes":  9852862,
+    "notes":  "Opcao Manter conectado ou pedir novo login apos 30 dias. Gesto Voltar percorre as telas anteriores. Verificacao de assinatura mais compativel e diagnostico copiavel em caso de falha. Temas e cores preservados.",
+    "publishedAt":  "2026-09-26T06:50:59.6205749Z"
 }
