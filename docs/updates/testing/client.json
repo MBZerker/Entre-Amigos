@@ -3,11 +3,11 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  22,
-    "versionName":  "0.9.3",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-22.apk",
-    "sha256":  "2E8EE064F86B0BE198554F3EADD317F4EE11A7BAAC2DA69E72FD207B62AE01D7",
-    "sizeBytes":  9885634,
-    "notes":  "Grupos organizados em Meus grupos e Meus pedidos. Organizadores aprovam ou recusam entradas; participantes e atividades separados. Listas em paginas de 20, com carregamento e economia de consultas. Retomada da atualizacao verifica se ha uma versao mais nova. Temas e cores preservados.",
-    "publishedAt":  "2026-09-26T15:43:21.6555664Z"
+    "versionCode":  23,
+    "versionName":  "0.9.4",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-23.apk",
+    "sha256":  "AD527A621FC93CBB9E23ACF99F43F356BEDF041B27291F1540AE99D641291842",
+    "sizeBytes":  9885672,
+    "notes":  "Botoes de confirmacao acessiveis com teclado aberto ao criar grupos, atividades e confirmar autenticador. Preenchimento opcional de codigo recente copiado do autenticador, sem envio automatico. Temas e cores preservados.",
+    "publishedAt":  "2026-09-27T05:40:42.0517759Z"
 }
