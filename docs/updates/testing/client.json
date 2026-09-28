@@ -3,11 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  24,
-    "versionName":  "0.9.5",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-24.apk",
-    "sha256":  "FC2A0774D330A3AE94BCFADB025DF21E3C1C806609DAF4F81B66EC09021FC1E3",
-    "sizeBytes":  10939084,
-    "notes":  "Biometria opcional em Menu \u003e Seguranca. Proteja a sessao neste aparelho com sua digital ao reabrir o app. Ativacao e desativacao confirmadas pelo Android, tokens cifrados e alternativa de login com senha. Temas e cores preservados.",
-    "publishedAt":  "2026-09-27T14:35:20.9166398Z"
+    "versionCode":  25,
+    "versionName":  "0.9.6",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-25.apk",
+    "sha256":  "42AFBA0609F5D8BFB764D327E01AD519587CE2AA1D038D14D0B79D5B06FF16D9",
+    "sizeBytes":  10955459,
+    "notes":  "Atualizacoes comuns sinalizadas por pontos verdes no menu, Atualizacoes e Verificar. Janela automatica somente para atualizacoes criticas. Correcao da ativacao do desbloqueio, alternativa por PIN/padrao/senha do aparelho e textos simplificados. Biometria indisponivel nao e oferecida.",
+    "critical":  false,
+    "publishedAt":  "2026-09-27T15:12:45.2928298Z"
 }
