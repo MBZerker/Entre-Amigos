@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  26,
-    "versionName":  "0.10.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-26.apk",
-    "sha256":  "508AB965EAD01A8E2C815653C5BD80E2CEA7FFCD4F5233D7177C06B6CA6125AB",
-    "sizeBytes":  10971881,
-    "notes":  "Desbloqueio direto pelo Android. Busca separada de grupos e atividades, filtros de grupos abertos/fechados, favoritos no menu e convites que respeitam a aprovacao e a privacidade dos grupos.",
+    "versionCode":  27,
+    "versionName":  "0.11.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-27.apk",
+    "sha256":  "3B8C40F60BF36353EC485505218E72C5CD6F4AF094A63F4E574A69420235DC92",
+    "sizeBytes":  11004645,
+    "notes":  "Categorias para organizar suas atividades, filtros por categoria nos seus grupos e denúncias com acompanhamento pelo menu. Melhorias de acesso e carregamento, preservando temas e desbloqueio.",
     "critical":  false,
-    "publishedAt":  "2026-09-28T12:56:50.9884473Z"
+    "publishedAt":  "2026-09-28T21:17:32.2155195Z"
 }
