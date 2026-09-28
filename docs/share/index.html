@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Convite Entre Amigos">
   <meta property="og:description" content="Abra este convite no aplicativo Entre Amigos.">
@@ -26,7 +27,8 @@
     <h1>Convite Entre Amigos</h1>
     <p id="status">Preparando o convite…</p>
     <a class="button" id="open" href="https://mbzerker.github.io/Entre-Amigos/">Abrir no aplicativo</a>
-    <a class="button secondary" href="../">Conhecer o Entre Amigos</a>
+    <a class="button secondary" href="../download/">Ainda não tenho o app</a>
+    <p>Entre na sua conta para abrir. Grupos fechados exigem aprovação. Atividades só podem ser acessadas por participantes autorizados. Se instalar agora, volte a este convite depois.</p>
   </main>
   <script>
     const params = new URLSearchParams(location.search);
@@ -35,14 +37,15 @@
     const code = params.get("code") || "";
     const open = document.getElementById("open");
     const status = document.getElementById("status");
-    if (id || code) {
+    const valid = ["group", "activity"].includes(type) && /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(id)
+      && (!code || /^[a-f0-9]{16}$/.test(code)) && [...params.keys()].every(key => ["type", "id", "code"].includes(key) && params.getAll(key).length === 1);
+    if (valid) {
       const target = new URL("entreamigos://open");
       target.searchParams.set("type", type);
       if (id) target.searchParams.set("id", id);
       if (code) target.searchParams.set("code", code);
       open.href = target.toString();
       status.textContent = type === "activity" ? "Você recebeu uma atividade compartilhada." : "Você recebeu um convite para um grupo.";
-      setTimeout(() => { location.href = open.href; }, 350);
     } else {
       status.textContent = "Este link não contém um convite válido.";
       open.hidden = true;

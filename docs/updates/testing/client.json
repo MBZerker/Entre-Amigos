@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  25,
-    "versionName":  "0.9.6",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-25.apk",
-    "sha256":  "42AFBA0609F5D8BFB764D327E01AD519587CE2AA1D038D14D0B79D5B06FF16D9",
-    "sizeBytes":  10955459,
-    "notes":  "Atualizacoes comuns sinalizadas por pontos verdes no menu, Atualizacoes e Verificar. Janela automatica somente para atualizacoes criticas. Correcao da ativacao do desbloqueio, alternativa por PIN/padrao/senha do aparelho e textos simplificados. Biometria indisponivel nao e oferecida.",
+    "versionCode":  26,
+    "versionName":  "0.10.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-26.apk",
+    "sha256":  "508AB965EAD01A8E2C815653C5BD80E2CEA7FFCD4F5233D7177C06B6CA6125AB",
+    "sizeBytes":  10971881,
+    "notes":  "Desbloqueio direto pelo Android. Busca separada de grupos e atividades, filtros de grupos abertos/fechados, favoritos no menu e convites que respeitam a aprovacao e a privacidade dos grupos.",
     "critical":  false,
-    "publishedAt":  "2026-09-27T15:12:45.2928298Z"
+    "publishedAt":  "2026-09-28T12:56:50.9884473Z"
 }
