@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  27,
-    "versionName":  "0.11.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-27.apk",
-    "sha256":  "3B8C40F60BF36353EC485505218E72C5CD6F4AF094A63F4E574A69420235DC92",
-    "sizeBytes":  11004645,
-    "notes":  "Categorias para organizar suas atividades, filtros por categoria nos seus grupos e denúncias com acompanhamento pelo menu. Melhorias de acesso e carregamento, preservando temas e desbloqueio.",
+    "versionCode":  28,
+    "versionName":  "0.12.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-28.apk",
+    "sha256":  "1139A8E4EFB7BAFDC5E8E8AABF2258B7C0E7768857EC55B4142D581976A77406",
+    "sizeBytes":  11004812,
+    "notes":  "Rifa pronta com tabela completa de 00 a 99, resultado no topo e compartilhamento. Recuperação limitada da apuração da Federal. Novos convites abrem diretamente o aplicativo. Atividades antigas e histórico preservados.",
     "critical":  false,
-    "publishedAt":  "2026-09-28T21:17:32.2155195Z"
+    "publishedAt":  "2026-09-29T10:07:21.8194767Z"
 }
