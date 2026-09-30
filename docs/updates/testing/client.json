@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  28,
-    "versionName":  "0.12.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-28.apk",
-    "sha256":  "1139A8E4EFB7BAFDC5E8E8AABF2258B7C0E7768857EC55B4142D581976A77406",
-    "sizeBytes":  11004812,
-    "notes":  "Rifa pronta com tabela completa de 00 a 99, resultado no topo e compartilhamento. Recuperação limitada da apuração da Federal. Novos convites abrem diretamente o aplicativo. Atividades antigas e histórico preservados.",
+    "versionCode":  29,
+    "versionName":  "0.13.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-29.apk",
+    "sha256":  "E33A0845704C6313D733CB956EBF2F1D06BD79F3F9C44BCB0DE57086BA1B3963",
+    "sizeBytes":  13009759,
+    "notes":  "Novo visual da Rifa em claro e escuro; correção da consulta oficial da Caixa; conferência com retorno e histórico automático após apuração.",
     "critical":  false,
-    "publishedAt":  "2026-09-29T10:07:21.8194767Z"
+    "publishedAt":  "2026-09-30T00:19:14.8669422Z"
 }
