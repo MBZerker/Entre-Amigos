@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  29,
-    "versionName":  "0.13.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-29.apk",
-    "sha256":  "E33A0845704C6313D733CB956EBF2F1D06BD79F3F9C44BCB0DE57086BA1B3963",
-    "sizeBytes":  13009759,
-    "notes":  "Novo visual da Rifa em claro e escuro; correção da consulta oficial da Caixa; conferência com retorno e histórico automático após apuração.",
+    "versionCode":  30,
+    "versionName":  "0.13.1",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-30.apk",
+    "sha256":  "FD8ECCC1AFE33704E66CE37D4F4216018FAEB46AC7D2FFC2B16A94CA726E8CE4",
+    "sizeBytes":  13026131,
+    "notes":  "Ajustes da Rifa: quatro colunas, data compacta com ícones, selo com ponto verde e informações/regras no alto.",
     "critical":  false,
-    "publishedAt":  "2026-09-30T00:19:14.8669422Z"
+    "publishedAt":  "2026-10-02T18:29:28.1345281Z"
 }
