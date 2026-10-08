@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  30,
-    "versionName":  "0.13.1",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-30.apk",
-    "sha256":  "FD8ECCC1AFE33704E66CE37D4F4216018FAEB46AC7D2FFC2B16A94CA726E8CE4",
-    "sizeBytes":  13026131,
-    "notes":  "Ajustes da Rifa: quatro colunas, data compacta com ícones, selo com ponto verde e informações/regras no alto.",
+    "versionCode":  31,
+    "versionName":  "0.14.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-31.apk",
+    "sha256":  "EBDFAA498301BB4D1CACD6B7E597FB7564855CECD20500E08C39DF3EF64CB00A",
+    "sizeBytes":  13042519,
+    "notes":  "Grupos renovados, convite e criação de rifa no grupo, histórico privado separado e legenda da rifa ajustada.",
     "critical":  false,
-    "publishedAt":  "2026-10-02T18:29:28.1345281Z"
+    "publishedAt":  "2026-10-08T20:21:20.1482279Z"
 }
