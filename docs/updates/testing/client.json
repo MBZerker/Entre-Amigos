@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  32,
-    "versionName":  "0.15.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-32.apk",
-    "sha256":  "39F73A069AEC6E30FD3166BFEA8B12E363FD05CA57C9C0E16453D69DE00CCCB3",
-    "sizeBytes":  13091652,
-    "notes":  "Rifa com resultado do organizador e Palpite livre, ambos gratuitos. Regras com aceite, escolhas preservadas, resultado e histórico. Imagens opcionais sob demanda. Rifa Federal mantida e atividades mais organizadas.",
+    "versionCode":  33,
+    "versionName":  "0.16.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-33.apk",
+    "sha256":  "76324463A3BAFF8D270EB93034F748669BA89E6408D312853BC6C6EF5D0F6F49",
+    "sizeBytes":  13141663,
+    "notes":  "Palpites individuais e combinados: vencedor, placar e estatísticas. Acerte todos os itens para vencer. Criação por etapas, Atividades renovadas com busca e filtros, declaração e privacidade nas configurações.",
     "critical":  false,
-    "publishedAt":  "2026-10-09T14:53:02.9051808Z"
+    "publishedAt":  "2026-10-10T04:45:02.2471040Z"
 }
