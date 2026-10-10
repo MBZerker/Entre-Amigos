@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  33,
-    "versionName":  "0.16.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-33.apk",
-    "sha256":  "76324463A3BAFF8D270EB93034F748669BA89E6408D312853BC6C6EF5D0F6F49",
-    "sizeBytes":  13141663,
-    "notes":  "Palpites individuais e combinados: vencedor, placar e estatísticas. Acerte todos os itens para vencer. Criação por etapas, Atividades renovadas com busca e filtros, declaração e privacidade nas configurações.",
+    "versionCode":  34,
+    "versionName":  "0.17.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-34.apk",
+    "sha256":  "79BD0E59D80960EEAEECAB7D8057777AD3474E441EB540EFCBB60201E41D0AE9",
+    "sizeBytes":  13158036,
+    "notes":  "Atividades por icones; palpites destacados sem duplicacao acidental; times preenchidos pelo titulo; revisao completa e rascunho salvo no aparelho. Atualizador com recuperacao, opcao de continuar usando o app e download pelo site.",
     "critical":  false,
-    "publishedAt":  "2026-10-10T04:45:02.2471040Z"
+    "publishedAt":  "2026-10-10T15:41:03.4740214Z"
 }
