@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  35,
-    "versionName":  "0.18.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-35.apk",
-    "sha256":  "0E601DDDAC0CB3CDC9A7511829C48C17D2C72A78E98348626241E1386C7CB764",
-    "sizeBytes":  13158026,
-    "notes":  "Fases do jogo mais claras, resultado final em destaque e acertos por participante. Confira todos os resultados antes de encerrar; jogos encerrados saem das listas ativas e ficam no historico. Horarios do rascunho preservados ao reabrir.",
+    "versionCode":  36,
+    "versionName":  "0.19.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-36.apk",
+    "sha256":  "4B8E5CE85BE34A84F1979BBE69E77BDCDCB950758B7E0952B4D81DF4C987C1B6",
+    "sizeBytes":  13174423,
+    "notes":  "Publicação de rifas simplificada, atividades em carrossel, grupos organizados, histórico expansível, menu no rodapé, proteção de capturas em grupos fechados, opção de manter a tela acesa e alternativa de download após falhas do Android.",
     "critical":  false,
-    "publishedAt":  "2026-10-11T16:21:43.9097952Z"
+    "publishedAt":  "2026-10-12T09:37:54.4366289Z"
 }
