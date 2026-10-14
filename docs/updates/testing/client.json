@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  36,
-    "versionName":  "0.19.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-36.apk",
-    "sha256":  "4B8E5CE85BE34A84F1979BBE69E77BDCDCB950758B7E0952B4D81DF4C987C1B6",
-    "sizeBytes":  13174423,
-    "notes":  "Publicação de rifas simplificada, atividades em carrossel, grupos organizados, histórico expansível, menu no rodapé, proteção de capturas em grupos fechados, opção de manter a tela acesa e alternativa de download após falhas do Android.",
+    "versionCode":  37,
+    "versionName":  "0.20.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-37.apk",
+    "sha256":  "3C993DFC67A67AED4BF88ADFE7CB89E9F70C30FDC40517EBDEA34295C40F0CCC",
+    "sizeBytes":  14440620,
+    "notes":  "Fotos de perfil pela galeria ou câmera. Moderação de fotos e banimento de membros pelo dono do grupo. Avisos opcionais de resultados e encerramento. Edição e remoção de palpites sem outros participantes. Grupos mais organizados e aviso de privacidade atualizado.",
     "critical":  false,
-    "publishedAt":  "2026-10-12T09:37:54.4366289Z"
+    "publishedAt":  "2026-10-14T16:05:35.3595522Z"
 }
