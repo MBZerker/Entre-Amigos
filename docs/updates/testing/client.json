@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  37,
-    "versionName":  "0.20.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-37.apk",
-    "sha256":  "3C993DFC67A67AED4BF88ADFE7CB89E9F70C30FDC40517EBDEA34295C40F0CCC",
-    "sizeBytes":  14440620,
-    "notes":  "Fotos de perfil pela galeria ou câmera. Moderação de fotos e banimento de membros pelo dono do grupo. Avisos opcionais de resultados e encerramento. Edição e remoção de palpites sem outros participantes. Grupos mais organizados e aviso de privacidade atualizado.",
+    "versionCode":  38,
+    "versionName":  "0.20.1",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-38.apk",
+    "sha256":  "19ACBFCA6AA3EF674A444E519BE628FFAE8E705E957D6EF63F5926726DAB98F6",
+    "sizeBytes":  14440627,
+    "notes":  "Corrige a ativação de avisos das atividades. Ativação direta, opção de tentar novamente e mensagens mais simples.",
     "critical":  false,
-    "publishedAt":  "2026-10-14T16:05:35.3595522Z"
+    "publishedAt":  "2026-10-18T16:13:39.6230761Z"
 }
