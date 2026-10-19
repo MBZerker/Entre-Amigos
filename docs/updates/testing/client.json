@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  38,
-    "versionName":  "0.20.1",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-38.apk",
-    "sha256":  "19ACBFCA6AA3EF674A444E519BE628FFAE8E705E957D6EF63F5926726DAB98F6",
-    "sizeBytes":  14440627,
-    "notes":  "Corrige a ativação de avisos das atividades. Ativação direta, opção de tentar novamente e mensagens mais simples.",
+    "versionCode":  39,
+    "versionName":  "0.21.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-39.apk",
+    "sha256":  "2C0D808CD55FA5B62B791AF1CF336E4459BF835A241BD9556F17A79EED60F57B",
+    "sizeBytes":  14675686,
+    "notes":  "Novos perfis dos membros, apresentação e texto copiável opcional nas atividades. Novo ícone e capas para Palpite e Rifa. Avisos de vitória e novidades dos grupos. Indicador de atualização animado.",
     "critical":  false,
-    "publishedAt":  "2026-10-18T16:13:39.6230761Z"
+    "publishedAt":  "2026-10-19T03:24:15.5618060Z"
 }
