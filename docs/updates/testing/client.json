@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  40,
-    "versionName":  "0.21.1",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-40.apk",
-    "sha256":  "1114FAB505C66E1F1A2581013214227C274E5E7B150CA07979565EA438B0C000",
-    "sizeBytes":  14754799,
-    "notes":  "Nova imagem dos grupos com dados, bola 8 e cartelas numeradas.",
+    "versionCode":  41,
+    "versionName":  "0.22.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-41.apk",
+    "sha256":  "CD711EE9613C9202E542F9D236DD16692DCC34D9485A53253F409D726972E911",
+    "sizeBytes":  14771181,
+    "notes":  "Texto do perfil copiado em um toque, sem duplicacao nem exibir o conteudo. Oculto do criador na confirmacao. Escolhas do grupo com quantidades, percentuais e barras apos o prazo dos palpites.",
     "critical":  false,
-    "publishedAt":  "2026-10-19T12:47:27.4987846Z"
+    "publishedAt":  "2026-10-19T13:46:20.8540278Z"
 }
