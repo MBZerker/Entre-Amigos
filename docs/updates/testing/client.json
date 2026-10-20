@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  41,
-    "versionName":  "0.22.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-41.apk",
-    "sha256":  "CD711EE9613C9202E542F9D236DD16692DCC34D9485A53253F409D726972E911",
-    "sizeBytes":  14771181,
-    "notes":  "Texto do perfil copiado em um toque, sem duplicacao nem exibir o conteudo. Oculto do criador na confirmacao. Escolhas do grupo com quantidades, percentuais e barras apos o prazo dos palpites.",
+    "versionCode":  42,
+    "versionName":  "0.23.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-42.apk",
+    "sha256":  "B908C60A778A475ED47BA4B8674EEB4FBCF042941EADD9A79EB8F7BD6ED117A3",
+    "sizeBytes":  15069518,
+    "notes":  "Escudos de clubes reconhecidos ao criar palpites, com cache limitado. Troca de capa pelo criador sem alterar regras ou participacoes. Inicio mostra a imagem da atividade.",
     "critical":  false,
-    "publishedAt":  "2026-10-19T13:46:20.8540278Z"
+    "publishedAt":  "2026-10-20T10:38:59.9908872Z"
 }
