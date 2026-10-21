@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  46,
-    "versionName":  "0.27.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-46.apk",
-    "sha256":  "31539F793775FC27F39BF299B0890E4A03046592E3D784DADA9EE49D18C44367",
-    "sizeBytes":  15573726,
-    "notes":  "Capas com escudos, carrossel mais suave e identificação do grupo centralizada. Compartilhe atividades junto ao sino; o convite acompanha o login e a entrada no grupo. Avisos abrem o jogo ou grupo correspondente. Consultas da Federal com novas tentativas automáticas e correção de agendamentos antigos.",
+    "versionCode":  47,
+    "versionName":  "0.27.1",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-47.apk",
+    "sha256":  "8442FC11527218959072E6B9039F612A02410BED5A1B18BDC9E4E1BA46E0C61D",
+    "sizeBytes":  15590136,
+    "notes":  "Escudos e nomes maiores com contorno preto nas capas. Confronto sem repetição no carrossel. Links curtos próprios para compartilhar grupos e atividades, mantendo entrada e aprovação do grupo.",
     "critical":  false,
-    "publishedAt":  "2026-10-21T16:56:57.2144627Z"
+    "publishedAt":  "2026-10-21T17:54:08.5144863Z"
 }
