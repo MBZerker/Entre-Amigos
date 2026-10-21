@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  43,
-    "versionName":  "0.24.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-43.apk",
-    "sha256":  "78311651F17EFF7018172905CB01AE5F9C0F93D00A76299AEF94B395D6D92E27",
-    "sizeBytes":  15188534,
-    "notes":  "Clubes e selecoes com sugestoes de nomes. Texto do perfil automatico nas confirmacoes. Orientacao para novos usuarios. Configuracoes do grupo, permissoes para criar jogos e banimentos temporarios.",
+    "versionCode":  44,
+    "versionName":  "0.25.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-44.apk",
+    "sha256":  "6FAB3C3F0E4F9CF7C8F72D103A160C74C48193F7B1DE8F130326980563983FEE",
+    "sizeBytes":  15540897,
+    "notes":  "Tres capas do catalogo para grupos e atividades. Perfil com foto centralizada e camera. Sino de avisos, fases sem repeticao e botao Criar jogo destacado.",
     "critical":  false,
-    "publishedAt":  "2026-10-20T21:16:48.4245484Z"
+    "publishedAt":  "2026-10-21T06:02:25.5555980Z"
 }
