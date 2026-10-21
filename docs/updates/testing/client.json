@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  45,
-    "versionName":  "0.26.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-45.apk",
-    "sha256":  "F8EBF6D15323CA9BA8084A3D769B418E72D37069F88D8DCB6418A5E95B78BFCC",
-    "sizeBytes":  15573666,
-    "notes":  "Texto copiavel na confirmacao da rifa. Carrossel automatico a cada 10 segundos, grupo nas atividades e melhorias de personalizacao.",
+    "versionCode":  46,
+    "versionName":  "0.27.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-46.apk",
+    "sha256":  "31539F793775FC27F39BF299B0890E4A03046592E3D784DADA9EE49D18C44367",
+    "sizeBytes":  15573726,
+    "notes":  "Capas com escudos, carrossel mais suave e identificação do grupo centralizada. Compartilhe atividades junto ao sino; o convite acompanha o login e a entrada no grupo. Avisos abrem o jogo ou grupo correspondente. Consultas da Federal com novas tentativas automáticas e correção de agendamentos antigos.",
     "critical":  false,
-    "publishedAt":  "2026-10-21T15:18:02.1802625Z"
+    "publishedAt":  "2026-10-21T16:56:57.2144627Z"
 }
