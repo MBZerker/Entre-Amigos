@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  48,
-    "versionName":  "0.28.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-48.apk",
-    "sha256":  "A2B2336708C3991C7A1CB41D559280B24DB17E390B744C5FC9BBDD7534F2033D",
-    "sizeBytes":  15590794,
-    "notes":  "Loja organizada em categorias, benefícios ativos e itens adquiridos. Prévia de capas e aparências antes de aplicar ao grupo e confirmação ao usar moedas. Novo ícone vetorial de atualização, com seta animada mais visível no menu. Loja ainda privada e sem cobranças reais.",
+    "versionCode":  49,
+    "versionName":  "0.29.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-49.apk",
+    "sha256":  "86353AF0605951C2E53E302FC4A33C9A205D7AB7EE7A21A12634902140A11D79",
+    "sizeBytes":  15607180,
+    "notes":  "Loja ADM: checkout Mercado Pago sandbox na aba Moedas, confirmação do pacote, retomada segura do mesmo pedido e conferência ao voltar do navegador. Saldo simulado separado, sem compras reais. Admin e canal estável preservados.",
     "critical":  false,
-    "publishedAt":  "2026-10-22T06:47:11.0698698Z"
+    "publishedAt":  "2026-10-22T17:45:07.6631037Z"
 }
