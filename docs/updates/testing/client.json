@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  47,
-    "versionName":  "0.27.1",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-47.apk",
-    "sha256":  "8442FC11527218959072E6B9039F612A02410BED5A1B18BDC9E4E1BA46E0C61D",
-    "sizeBytes":  15590136,
-    "notes":  "Escudos e nomes maiores com contorno preto nas capas. Confronto sem repetição no carrossel. Links curtos próprios para compartilhar grupos e atividades, mantendo entrada e aprovação do grupo.",
+    "versionCode":  48,
+    "versionName":  "0.28.0",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-48.apk",
+    "sha256":  "A2B2336708C3991C7A1CB41D559280B24DB17E390B744C5FC9BBDD7534F2033D",
+    "sizeBytes":  15590794,
+    "notes":  "Loja organizada em categorias, benefícios ativos e itens adquiridos. Prévia de capas e aparências antes de aplicar ao grupo e confirmação ao usar moedas. Novo ícone vetorial de atualização, com seta animada mais visível no menu. Loja ainda privada e sem cobranças reais.",
     "critical":  false,
-    "publishedAt":  "2026-10-21T17:54:08.5144863Z"
+    "publishedAt":  "2026-10-22T06:47:11.0698698Z"
 }
