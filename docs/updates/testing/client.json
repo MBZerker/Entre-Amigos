@@ -3,12 +3,12 @@
     "applicationId":  "app.entreamigos.mobile",
     "channel":  "testing",
     "available":  true,
-    "versionCode":  49,
-    "versionName":  "0.29.0",
-    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-49.apk",
-    "sha256":  "86353AF0605951C2E53E302FC4A33C9A205D7AB7EE7A21A12634902140A11D79",
-    "sizeBytes":  15607180,
-    "notes":  "Loja ADM: checkout Mercado Pago sandbox na aba Moedas, confirmação do pacote, retomada segura do mesmo pedido e conferência ao voltar do navegador. Saldo simulado separado, sem compras reais. Admin e canal estável preservados.",
+    "versionCode":  50,
+    "versionName":  "0.29.1",
+    "apkUrl":  "https://mbzerker.github.io/Entre-Amigos/updates/testing/apks/entre-amigos-client-50.apk",
+    "sha256":  "5AB82136C090ABA38870546428438B202B3F8E5A6AE0D010A6CCBFA5C2E90CA6",
+    "sizeBytes":  15607176,
+    "notes":  "Loja ADM: saldo de teste do Mercado Pago visível e separado das moedas da loja. Total confirmado pelo servidor, preservado após concluir o teste. Sem cobranças reais ou alteração de saldos.",
     "critical":  false,
-    "publishedAt":  "2026-10-22T17:45:07.6631037Z"
+    "publishedAt":  "2026-10-22T19:42:07.8188440Z"
 }
