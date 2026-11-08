@@ -1,12 +1,12 @@
 {
-  "versionCode": 55,
-  "versionName": "0.31.2",
+  "versionCode": 56,
+  "versionName": "0.32.0",
   "applicationId": "app.entreamigos.mobile",
-  "sha256": "B97B8E59BA9940951C213177D67E3CBA97B2B363506483210199F00974D35D8C",
-  "sizeBytes": 15850747,
+  "sha256": "3E8958E33B2949CC2FA0419F956312C4ED7240E0DC44A7E52F5A0F8FBC758140",
+  "sizeBytes": 15850743,
   "apiOrigin": "https://entre-amigos-client-pilot-production.nectof.workers.dev",
   "signerSha256": "285CE205364ACE57881246A92C86A3C9B2D0AD161D2FE97F53DB1E5360105C5E",
-  "commerceEnabled": false,
+  "commerceEnabled": true,
   "notificationsEnabled": false,
   "updatesViaDownloadPage": true
 }
